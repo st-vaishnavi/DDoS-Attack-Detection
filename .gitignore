@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables and local settings
+.env
+.env.local
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+data/live/
+
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+
+# Local traffic captures
+data/live/
+*.pcap
+*.pcapng
+
+# Large datasets - keep locally
+data/Flooding_Based_DDoS_Multi-class_Dataset.csv
+data/ddos_cleaned.csv
+data/train.csv
+data/test.csv
+
+# Ignore datasets regardless of their subfolder
+data/**/Flooding_Based_DDoS_Multi-class_Dataset.csv
+data/**/ddos_cleaned.csv
+data/**/train.csv
+data/**/test.csv
+
+# Ignore generated live outputs
+outputs/alerts.csv
+outputs/live_predictions.csv
+outputs/traffic_summary.csv
+outputs/live_model_features_provisional.csv
+

@@ -1,0 +1,46 @@
+=====================================================================
+DDoS DETECTION SYSTEM: LIVE & LAB VALIDATION REPORT
+Generated on: 2026-10-28 20:30:10
+=====================================================================
+
+1. ORDINARY NETWORK TRAFFIC (BENIGN WI-FI VALIDATION)
+---------------------------------------------------------------------
+- Capture File Analyzed          : wifi_capture.pcapng / packets_for_features.csv
+- Total Valid Flow Windows       : 1111
+- Correctly Identified as Normal : 1111
+- False Positives (Anomalies)    : 0
+- False Positive Rate (FPR)      : 0.00%
+- Breakdown                      : {"Normal": 1111}
+
+2. LABELED MULTI-CLASS BENCHMARK VALIDATION
+---------------------------------------------------------------------
+- Overall Accuracy               : 97.47%
+- Macro Precision                : 93.46%
+- Macro Recall                   : 95.22%
+- Macro F1-Score                 : 94.23%
+- Weighted F1-Score              : 97.55%
+
+Detailed Multi-Class Classification Performance:
+               precision    recall  f1-score   support
+
+ ACK Flooding     1.0000    1.0000    1.0000       905
+HTTP Flooding     1.0000    1.0000    1.0000       119
+       Normal     0.9631    0.9275    0.9450      3323
+ SYN Flooding     0.7100    0.8333    0.7667       708
+ UDP Flooding     1.0000    1.0000    1.0000      9145
+
+     accuracy                         0.9747     14200
+    macro avg     0.9346    0.9522    0.9423     14200
+ weighted avg     0.9769    0.9747    0.9755     14200
+
+
+3. SYN FLOODING MISCLASSIFICATION INVESTIGATION
+---------------------------------------------------------------------
+- Normal misclassified as SYN Flooding : 241 windows
+- SYN Flooding misclassified as Normal : 118 windows
+- Root Cause: In a 10-packet window, benign parallel connection handshakes (e.g., browser
+  tab opening) generate 10 pure SYN packets (Avg_syn_flag=1.0, length=54B, payload=0B),
+  creating an identical packet header footprint to a SYN Flood window.
+- Recommended Live Countermeasure: Window Persistence Rule (requiring >= 2 consecutive
+  attack windows) + Confidence Threshold (> 0.85) to distinguish transient handshakes from attacks.
+=====================================================================

@@ -1,0 +1,6 @@
+,ACK Flooding,HTTP Flooding,Normal,SYN Flooding,UDP Flooding
+ACK Flooding,905,0,0,0,0
+HTTP Flooding,0,118,1,0,0
+Normal,1,0,3114,208,0
+SYN Flooding,0,0,229,479,0
+UDP Flooding,0,0,0,0,9145

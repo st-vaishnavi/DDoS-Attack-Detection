@@ -1,0 +1,19 @@
+DDoS Detection Evaluation Report
+===================================
+Accuracy: 0.9747
+Macro Precision: 0.9346
+Macro Recall: 0.9522
+Macro F1: 0.9423
+Weighted F1: 0.9755
+
+               precision    recall  f1-score   support
+
+ ACK Flooding     1.0000    1.0000    1.0000       905
+HTTP Flooding     1.0000    1.0000    1.0000       119
+       Normal     0.9631    0.9275    0.9450      3323
+ SYN Flooding     0.7100    0.8333    0.7667       708
+ UDP Flooding     1.0000    1.0000    1.0000      9145
+
+     accuracy                         0.9747     14200
+    macro avg     0.9346    0.9522    0.9423     14200
+ weighted avg     0.9769    0.9747    0.9755     14200

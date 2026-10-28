@@ -1,0 +1,41 @@
+{
+  "model_name": "Random Forest",
+  "target_column": "Label",
+  "feature_columns": [
+    "Avg_syn_flag",
+    "Avg_urg_flag",
+    "Avg_fin_flag",
+    "Avg_ack_flag",
+    "Avg_psh_flag",
+    "Avg_rst_flag",
+    "Avg_DNS_pkt",
+    "Avg_TCP_pkt",
+    "Avg_UDP_pkt",
+    "Avg_ICMP_pkt",
+    "Duration_window_flow",
+    "Avg_delta_time",
+    "Min_delta_time",
+    "Max_delta_time",
+    "StDev_delta_time",
+    "Avg_pkts_lenght",
+    "Min_pkts_lenght",
+    "Max_pkts_lenght",
+    "StDev_pkts_lenght",
+    "Avg_small_payload_pkt",
+    "Avg_payload",
+    "Min_payload",
+    "Max_payload",
+    "StDev_payload",
+    "Avg_DNS_over_TCP"
+  ],
+  "classes": [
+    "ACK Flooding",
+    "HTTP Flooding",
+    "Normal",
+    "SYN Flooding",
+    "UDP Flooding"
+  ],
+  "selection_metric": "macro_f1",
+  "random_state": 42,
+  "test_size": 0.2
+}

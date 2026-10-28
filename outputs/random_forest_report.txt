@@ -1,0 +1,11 @@
+               precision    recall  f1-score   support
+
+ ACK Flooding       1.00      1.00      1.00       905
+HTTP Flooding       1.00      1.00      1.00       119
+       Normal       0.96      0.93      0.94      3323
+ SYN Flooding       0.71      0.83      0.77       708
+ UDP Flooding       1.00      1.00      1.00      9145
+
+     accuracy                           0.97     14200
+    macro avg       0.93      0.95      0.94     14200
+ weighted avg       0.98      0.97      0.98     14200

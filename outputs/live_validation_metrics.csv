@@ -1,0 +1,6 @@
+Class,Precision,Recall,F1-Score,Support
+ACK Flooding,1.0,1.0,1.0,905
+HTTP Flooding,1.0,1.0,1.0,119
+Normal,0.9631,0.9275,0.945,3323
+SYN Flooding,0.71,0.8333,0.7667,708
+UDP Flooding,1.0,1.0,1.0,9145
